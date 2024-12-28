@@ -1,0 +1,39 @@
+﻿@model BirKadınBirErkekTasarımMerkezi.Models.Kisim
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Kisim</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="KisimAdi" class="control-label"></label>
+                <input asp-for="KisimAdi" class="form-control" />
+                <span asp-validation-for="KisimAdi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Kapasitesi" class="control-label"></label>
+                <input asp-for="Kapasitesi" class="form-control" />
+                <span asp-validation-for="Kapasitesi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Bir Önceki Sayfa</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

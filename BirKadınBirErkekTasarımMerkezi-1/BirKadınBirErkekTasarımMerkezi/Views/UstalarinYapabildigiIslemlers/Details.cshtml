@@ -1,0 +1,30 @@
+﻿@model BirKadınBirErkekTasarımMerkezi.Models.UstalarinYapabildigiIslemler
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>UstalarinYapabildigiIslemler</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ustalar)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ustalar.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Islemler)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Islemler.ID)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Bir Önceki Sayfa</a>
+</div>

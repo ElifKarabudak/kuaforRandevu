@@ -1,0 +1,58 @@
+﻿@model IEnumerable<BirKadınBirErkekTasarımMerkezi.Models.Randevu>
+
+@{
+    ViewData["Title"] = "Randevularim";
+}
+
+<h1>Randevularim</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.iletisimNumaraniz)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.kullaniciID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Islemler)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ustalar)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Zaman)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Onay)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.iletisimNumaraniz)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.kullaniciID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Islemler.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ustalar.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Zaman)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Onay)
+            </td>
+            
+        </tr>
+}
+    </tbody>
+</table>

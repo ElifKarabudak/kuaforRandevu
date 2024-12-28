@@ -1,0 +1,263 @@
+/* Genel stil ayarlarý */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+/* Formun container'ý */
+.container {
+    max-width: 800px;
+    margin-top: 30px;
+}
+
+/* Baþlýklar */
+h1, h4 {
+    text-align: center;
+    color: #0056b3;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Form alanlarý */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Etiketler */
+label.control-label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #495057;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input alanlarý */
+input.form-control {
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+    /* Focus efekti */
+    input.form-control:focus {
+        border-color: #80bdff;
+        outline: none;
+    }
+
+/* Validation mesajlarý */
+.text-danger {
+    font-size: 0.9rem;
+    color: #dc3545;
+}
+
+/* Select alaný */
+select.form-control {
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+    select.form-control:focus {
+        border-color: #80bdff;
+        outline: none;
+    }
+
+/* Submit butonu */
+input[type="submit"].btn-primary {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    /* Buton üzerine hover efekti */
+    input[type="submit"].btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+
+/* Sayfa navigasyon baðlantýsý */
+a {
+    font-size: 1.1rem;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+    a:hover {
+        color: #0056b3;
+    }
+
+/* Validation mesajlarý için stil */
+.text-danger {
+    font-size: 0.875rem;
+    color: #dc3545;
+    margin-top: 5px;
+}
+
+/* Responsif düzenleme */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    input[type="submit"].btn-primary {
+        font-size: 1rem;
+    }
+}
+/* Genel stil ayarlarý */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+/* Sayfa baþlýklarý */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+/* Tablo stili */
+table.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+    table.table th, table.table td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    table.table th {
+        background-color: #007bff;
+        color: white;
+        font-size: 1.1rem;
+    }
+
+    table.table td {
+        font-size: 1rem;
+    }
+
+    /* Tablo satýr hover efekti */
+    table.table tr:hover {
+        background-color: #f1f1f1;
+    }
+
+/* Link butonlar */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-right: 15px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    a:hover {
+        color: #fff;
+        background-color: #0056b3;
+    }
+
+    /* Yeni kayýt oluþturma linki */
+    a[href*='Create'] {
+        font-size: 1.25rem;
+        background-color: #28a745;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 20px;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+    }
+
+        a[href*='Create']:hover {
+            background-color: #218838;
+        }
+
+/* Hata ve bilgilendirme mesajlarý */
+.text-danger {
+    font-size: 1rem;
+    color: #dc3545;
+    margin-top: 10px;
+}
+
+/* Sayfa navigasyonu ve iþlemler */
+td a {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+    td a[href*='Edit'] {
+        background-color: #ffc107;
+        color: white;
+    }
+
+    td a[href*='Details'] {
+        background-color: #17a2b8;
+        color: white;
+    }
+
+    td a[href*='Delete'] {
+        background-color: #dc3545;
+        color: white;
+    }
+
+    td a[href*='Onayla'] {
+        background-color: #28a745;
+        color: white;
+    }
+
+    td a[href*='RedEt'] {
+        background-color: #6c757d;
+        color: white;
+    }
+
+    td a:hover {
+        background-color: #343a40;
+        color: white;
+    }
+
+/* Responsive düzenleme */
+@media (max-width: 768px) {
+    table.table th, table.table td {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    a {
+        font-size: 1rem;
+    }
+
+        a[href*='Create'] {
+            font-size: 1rem;
+            padding: 8px 15px;
+        }
+}

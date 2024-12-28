@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Hoş Geldiniz!</h2>
+    <p class="text-center mb-5">Randevu almak ve yapay zeka asistanımızdan faydalanmak için giriş yapın.</p>
+
+    <!-- Giriş Linki -->
+    <div class="text-center mb-4">
+        <a class="btn btn-primary btn-lg" asp-area="Identity" asp-page="/Account/Login">Giriş Yap</a>
+    </div>
+
+    <!-- Yapay Zeka ve Randevu Bağlantıları -->
+    <div class="row justify-content-center mb-5">
+        <div class="col-md-3 mb-3">
+            <a class="btn btn-info btn-block" asp-action="Index" asp-controller="Musteri">Yapay Zekadan Öneri Alın</a>
+        </div>
+        <div class="col-md-3 mb-3">
+            <a class="btn btn-success btn-block" asp-action="Randevularim" asp-controller="Musteri">Randevularınızı Görün</a>
+        </div>
+        <div class="col-md-3 mb-3">
+            <a class="btn btn-warning btn-block" asp-action="Create" asp-controller="Randevus">Randevu Oluşturun</a>
+        </div>
+         <div class="col-md-3 mb-3">
+            <a class="btn btn-warning btn-block" asp-action="ErkeklereOzelSalon" asp-controller="Islemlers">Erkeklere Yönelik İşlemlerimiz</a>
+        </div>
+        <div class="col-md-3 mb-3">
+            <a class="btn btn-warning btn-block" asp-action="KadinlaraOzelSalon" asp-controller="Islemlers">Kadınlara Yönelik İşlemlerimiz</a>
+        </div>
+    </div>
+
+    <!-- Fotoğraflar Galerisi -->
+    <div class="row">
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="~/image/foto1.jpg" class="card-img-top" alt="Fotoğraf 1">
+                <div class="card-body text-center">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="~/image/foto2.jpg" class="card-img-top" alt="Fotoğraf 2">
+                <div class="card-body text-center">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="~/image/foto3.jpg" class="card-img-top" alt="Fotoğraf 3">
+                <div class="card-body text-center">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="~/image/foto4.jpg" class="card-img-top" alt="Fotoğraf 4">
+                <div class="card-body text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap Iconları İçin Link -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">

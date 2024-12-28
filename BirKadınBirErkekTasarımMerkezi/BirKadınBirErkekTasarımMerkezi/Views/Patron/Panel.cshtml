@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Panel";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Panel</h2>
+
+    <div class="row">
+        <!-- Sol Kolon: Menüler -->
+        <div class="col-md-4">
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action" asp-action="Index" asp-controller="Islemlers">
+                    <i class="bi bi-arrow-right-circle"></i> İşlemlere Git
+                </a>
+                <a class="list-group-item list-group-item-action" asp-action="KazanclariGor">
+                    <i class="bi bi-currency-dollar"></i> Kazançlarını Gör
+                </a>
+                <a class="list-group-item list-group-item-action" asp-action="Index" asp-controller="Randevus">
+                    <i class="bi bi-calendar-event"></i> Randevulara Git
+                </a>
+                <a class="list-group-item list-group-item-action" asp-action="Index" asp-controller="UstalarinYapabildigiIslemlers">
+                    <i class="bi bi-person-check"></i> Ustalara İşlem Atama
+                </a>
+                <a class="list-group-item list-group-item-action" asp-action="Index" asp-controller="Ustalars">
+                    <i class="bi bi-person-lines-fill"></i> Ustalara Git
+                </a>
+            </div>
+        </div>
+
+        <!-- Sağ Kolon: Geriye Dönüş -->
+        <div class="col-md-8">
+            <div class="alert alert-info text-center">
+                <h4>Hoş geldiniz! Yukarıdaki menülerden seçim yapabilirsiniz.</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap Iconları İçin Link -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">

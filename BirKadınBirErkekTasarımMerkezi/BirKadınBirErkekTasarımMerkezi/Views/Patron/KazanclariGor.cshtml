@@ -1,0 +1,25 @@
+﻿@model List<BirKadınBirErkekTasarımMerkezi.Models.KazancModel>
+
+@{
+    ViewData["Title"] = "Günlük Kazançlar";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tarih</th>
+            <th>Toplam Kazanç</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Gun.ToString("yyyy-MM-dd")</td>
+                <td>@item.ToplamKazanc.ToString("C")</td>
+            </tr>
+        }
+    </tbody>
+</table>
